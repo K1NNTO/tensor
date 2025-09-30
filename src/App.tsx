@@ -1,23 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import MusicSection from './components/MusicSection';
+import SearchResults from './components/SearchResults';
+import Footer from './components/Footer';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+/**
+ * Главный компонент приложения.
+ * Содержит состояние поискового запроса и переключение между секциями.
+ */
+function App() {
+  const [searchQuery, setSearchQuery] = useState('');
 
-// export default App;
+  return (
+    <div className="App">
+      <Header onSearch={setSearchQuery} />
+      {searchQuery ? (
+        <SearchResults query={searchQuery} onSearch={setSearchQuery} />
+      ) : (
+        <MusicSection />
+      )}
+      <Footer />
+    </div>
+  );
+}
+
+export default App;

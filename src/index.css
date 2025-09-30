@@ -1,0 +1,723 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.music-section {
+    padding: 40px 60px;
+
+}
+
+.music-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.music-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tag-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+
+.tag-main {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    color: white;
+}
+
+.tag-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tag-main>img {
+    min-width: 500px;
+}
+
+.tag-info {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.tag-info h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.tag-info p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.tag-info a {
+    color: white;
+    text-decoration: underline;
+}
+
+.genres {
+    margin-top: 15px;
+}
+
+.genres ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.genres li a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.genres li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.artists {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.artists div {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.artists img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.releas img {
+    max-width: 120px;
+    margin-right: 20px;
+
+}
+
+.releases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.releas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Blure {
+    color: gray;
+}
+
+.mini-genres ul {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.mini-genres li::after {
+    content: "•";
+    color: gray;
+    margin: 0 4px;
+    font-size: 10px;
+}
+
+.mini-genres li:last-child::after {
+    content: "";
+}
+
+.mini-genres li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.guy img {
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.guys {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 15px;
+
+}
+
+.heading {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.first-col {
+    display: flex;
+
+}
+
+.track img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+}
+
+.track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    gap: 15px;
+    border-radius: 8px;
+}
+
+
+.popular-tracks {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.popular-tracks h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+
+.first-col,
+.second-col,
+.third-col {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.popular-tracks>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+.info h4 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: #222;
+}
+
+.info p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+.heading h2 {
+
+    font-size: 28px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.guy a {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+}
+
+.track a {
+
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+
+}
+
+
+.footer {
+    background: #000;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-top-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.footer-col h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #bbb;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.footer-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.footer-bottom li {
+    margin-right: 15px;
+}
+
+.footer-bottom li:last-child {
+    margin-right: 0;
+}
+
+.footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+.heading hr {
+    background-color: red;
+    width: 50px;
+    height: 2px;
+    border: none;
+}
+
+
+
+
+.secondary-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.secondary-nav li {
+    display: inline-block;
+}
+
+.secondary-nav a {
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.secondary-nav a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+
+
+
+.search-results>h1,
+.search-results nav {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.artists-sq {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+
+
+.card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.card-bg {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+}
+
+.card-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-listeners {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.card-price a {
+    color: inherit;
+    text-decoration: none;
+
+
+}
+
+.card-listeners a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-price a:visited {
+    color: inherit;
+}
+
+.card-listeners a:visited {
+    color: inherit;
+}
+
+.artists-sq-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.albums-sq-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.albums-sq {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+
+
+.tracks-container {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.track:first-child {
+    border-top: none;
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cover {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.info {
+    flex: 1;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.artist {
+    color: #666;
+    font-size: 14px;
+}
+
+.duration {
+    color: #444;
+    font-size: 14px;
+}
+
+.more-tracks {
+    text-align: right;
+    color: #007aff;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    justify-content: center;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px 4px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.clear-btn,
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+    padding: 4px;
+}
+
+.clear-btn:hover,
+.search-btn:hover {
+    color: #333;
+}
+
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.search-wrapper form {
+    position: relative;
+    width: 100%;
+}
+.clear-btn {
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.clear-btn:hover {
+    color: #333;
+}
+
+.divider {
+    position: absolute;
+    right: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 24px;
+    background-color: #ccc;
+    margin: 0 8px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+}
