@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_KEY = "bb72f5eb66111e4ad11d3042e333c1f9";
+const API_KEY = "bedf9c7a443cea6d5b6bf0f553ac6f3b";
 const BASE_URL = "https://ws.audioscrobbler.com/2.0/";
 
 interface Image {
